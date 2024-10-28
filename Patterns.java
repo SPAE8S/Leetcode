@@ -197,7 +197,7 @@ public class Patterns {
     }
 
     private static void pattern11(int n) {
-        int start=1;
+        int start;
         for(int i=0;i<n;i++)
         {
             if(i%2==0) start=1;
