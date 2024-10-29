@@ -1,7 +1,7 @@
 public class Patterns {
     public static void main(String[] args) {
         display();
-        int n=5;
+        int n=5,a=4;
         pattern1(n);
         pattern2(n);
         pattern3(n);
@@ -13,6 +13,8 @@ public class Patterns {
         pattern9(n);
         pattern10(n);
         pattern11(n);
+        pattern12(a);
+        pattern13(n);
     }
 
 
@@ -212,4 +214,39 @@ public class Patterns {
         System.out.println();
     }
 
+    private static void pattern12(int a) {
+        int space=2*(a-1);
+        for(int i=1;i<=a;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(j);
+            }
+            for(int j=1;j<=space;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=i;j>=1;j--)
+            {
+                System.out.print(j);
+            }
+            System.out.println(" ");
+            space-=2;
+        }
+        System.out.println();
+    }
+
+    private static void pattern13(int n) {
+        int num=1;
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(num+" ");
+                num+=1;
+            }
+            System.out.println();
+        }
+
+    }
 }
