@@ -15,9 +15,6 @@ public class Patterns {
         pattern11(n);
         pattern12(a);
         pattern13(n);
-        pattern14(n);
-        pattern15(n);
-        pattern16(n);
     }
 
 
@@ -250,45 +247,7 @@ public class Patterns {
             }
             System.out.println();
         }
-        System.out.println();
 
-    }
-
-    private static void pattern14(int n) {
-        for(int i=0;i<n;i++)
-        {
-            for(char ch='A';ch<='A'+i;ch++)
-            {
-                System.out.print(ch+" ");
-            }
-            System.out.println();
-        }
-        System.out.println();
-    }
-
-    private static void pattern15(int n) {
-            for(int i=0;i<n;i++)
-            {
-                for(char ch='A';ch<='A'+(n-i-1);ch++)
-                {
-                    System.out.print(ch+" ");
-                }
-                System.out.println();
-            }
-        System.out.println();
-    }
-
-    private static void pattern16(int n) {
-        for(int i=0;i<n;i++)
-        {
-            char ch=(char) ('A'+i);
-            for(int j=0;j<=i;j++)
-            {
-                System.out.print(ch+" ");
-            }
-            System.out.println();
-        }
-        System.out.println();
     }
 
 }
