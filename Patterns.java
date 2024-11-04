@@ -22,8 +22,9 @@ public class Patterns {
         pattern18(n);
         pattern19(n);
         pattern20(n);
+        pattern21(n);
+        pattern22(a);
     }
-
 
     private static void display() {
         System.out.println();
@@ -350,4 +351,34 @@ public class Patterns {
         }
         System.out.println();
     }
+
+    private static void pattern21(int n) {
+
+        for(int i=0;i<n;i++) {
+
+            for(int j=0;j<n;j++) {
+
+                if(i==0 || i==n-1 || j==0 || j==n-1)
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
+    private static void pattern22(int a) {
+        for(int i=0;i<(2*a-1);i++)
+        {
+            for(int j=0;j<(2*a-1);j++)
+            {
+                int top = i;
+                int bottom = j;
+                int right = (2*a - 2) - j;
+                int left = (2*a - 2) - i;
+                System.out.print(a-Math.min(Math.min(top,bottom), Math.min(left,right)) + " ");
+            }
+            System.out.println();}
+}
 }
